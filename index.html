@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faded Nickel Photography | Northern Colorado Photography</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head> 
+<body>
+    <div class="wrapper">
+
+    <header id="header">
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <img src="https://via.placeholder.com/150x100" id="brand">
+                <span onclick="openNav()" class="openBtn"><i class="fa fa-bars"></i></span>
+
+                <div class="overlay-content" id="nav">
+                    <span href="javascript:void(0)" class="closeBtn" onclick="closeNav()">×</span>
+                    <a href="index.html">Home</a>
+                    <a href="html/about.html">About</a>
+                    <a href="html/services.html">Services</a>
+                    <a href="html/contact.html">Contact</a>
+                </div>
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/about.html">About</a></li>
+                    <li><a href="html/services.html">Services</a></li>
+                    <li><a href="html/contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="hero-txt">
+            <h1>Lorem Ipsum</h1>
+        </div>
+        <img src="images/type-1161954_1920 2.jpg" class="hero">
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide"><img src="images/noco_photography_hero_image_01.jpg"></div>
+                <div class="swiper-slide"><img src="images/noco_photography_hero_image_02.jpg"></div>
+                <div class="swiper-slide"><img src="images/noco_photography_hero_image_03.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+
+    <content>
+        <img src="https://via.placeholder.com/500">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium error totam perspiciatis minima. Deleniti iste assumenda voluptatum nobis, esse, est ullam voluptatibus molestias recusandae distinctio harum. Odio provident harum dolor?</p>
+    </content>
+    <footer>
+
+        <div>
+            Explore
+        </div>
+
+        <div>
+            Connect
+        </div>
+
+        <div>
+            Copyright
+        </div>
+                    
+        <!--
+        <div id="footer-text">
+
+            <p>
+                Let's Connect
+            </p>
+            <a href="tel:#"><i class="fa fa-phone"></i></a>
+            <a href="https://www.instagram.com/madison_manor_designs/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+
+            <p>
+                Copyright Declaration
+            </p>
+            <p>
+            Website Designed by <a href="#">Atlas Web Development</a>
+            </p>
+        </div>-->
+    </footer>
+
+    <script src="js/mobile_navigation.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".swiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                },
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+              });
+            
+        </script>
+</body>
+</html>
