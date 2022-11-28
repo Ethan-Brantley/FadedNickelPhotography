@@ -1,5 +1,5 @@
 /*
- *
+ *brand
  * General Info
  *
  * The following set of styling rules is hand-written mobile-first.
@@ -25,7 +25,7 @@ html {
     height: 100%;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     color: #5c5c5c;
-    background-color: #f1e9ce;
+    background-color: #e0dbca;
 
 }
 
@@ -54,12 +54,21 @@ body {
 .float-r {
 
     float: right;
+    width: 100%;
 
 }
 
 .float-l {
 
     float: left;
+    width: 100%;
+
+}
+
+.float-c {
+
+    margin: auto;
+    width: 100%;
 
 }
 
@@ -81,12 +90,13 @@ header{
 
     background-color: #4e3f31f3;
     color: #f4f0e1;
+    margin-bottom: 150px;
     
 }
 
  #brand {
 
-    top: 0;
+    top: 0%;
     left: 50%;
     margin-top: 25px;
     transform: translate(-50%);
@@ -96,7 +106,15 @@ header{
 
  .hero-txt {
 
-    display: none;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    transform: translate(-50%, 0%);
+    left:50%;
+    font-size: 2em;
+    z-index: 1;
+    display: block;
+    color: #eae7df;
 
  }
 
@@ -138,9 +156,9 @@ a {
     align-items: center;
     justify-content: center;
     color: #FFF;
+    background-color: #e0dbca;
     width: 100vw;
-    height: 150px;
-    padding: 20px;
+    height: 0px;
 
 }
 
@@ -201,7 +219,7 @@ input[type=checkbox]:checked ~ .menu{
 
 .overlay-content {
 
-    background: rgba(0, 0, 0, 0.9);
+    background: #4e3f31;
     overflow: hidden;
     position: fixed;
     height: 100vh;
@@ -227,7 +245,7 @@ input[type=checkbox]:checked ~ .menu{
 
 .overlay-content a:hover {
 
-    background-color: rgb(43, 43, 43);
+    background-color: #675341f3;
 
 }
 
@@ -237,6 +255,7 @@ position: fixed;
 color: black;
 top: 0%;
 right: 0%;
+z-index: 2;
 
 }
 
@@ -254,7 +273,6 @@ right: 0%;
 
     height: 50%;
     width: 100%;
-    border: #FFF 1px solid;
 
 }
 
@@ -273,9 +291,17 @@ right: 0%;
 
 }
 
-.hero {
+#hero {
 
-    display: none;
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+
+}
+
+.fa-bars {
+
+    color: black;
 
 }
 
@@ -292,7 +318,18 @@ content {
     display: block;
     height: 100%;
     width: 100%;
+
+}
+
+.content-section {
+
     padding: 50px;
+
+}
+
+.content-section p {
+
+    text-indent: 1.5em;
 
 }
 
@@ -300,7 +337,16 @@ h1 {
 
 }
 
-p {
+h2 {
+
+    padding: 10px 0px;
+
+}
+
+content p {
+
+    text-indent: 1.5em;
+    padding: 5px 0px;
 
 }
 
@@ -312,7 +358,8 @@ p {
 
 .card-sm {
 
-    padding: 70px 40px;
+    margin-top: 150px;
+    padding: 20px 40px;
     width: 100%;
 
 }
@@ -324,10 +371,27 @@ p {
 
 }
 
+.card-md {
+
+    padding: 20px 40px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+
 .pfp {
 
     margin: auto;
     border-radius: 50%;
+
+}
+
+.sideP {
+
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 
 }
 
@@ -341,11 +405,13 @@ p {
 
 footer {
 
-    background-color: #e0d9bf;
+    background-color: #b4ad96;
+    color: #eae7df;
     min-height: 15%;
+    overflow: hidden;
     width: 100%;
     bottom: 0px;
-    padding: 20px;
+    padding: 30px;
 
 }
 
@@ -357,19 +423,48 @@ footer {
 
 .fa-instagram {
 
-    color: black;
+    color: #eae7df;
 
 }
 
 .fa-phone {
 
-    color: black;
+    color: #eae7df;
 
 }
 
 .fa-youtube-play {
 
-    color: black;
+    color: #eae7df;
+
+}
+
+.footer-section {
+
+    width: 100%;
+    min-height: 100px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.action-button {
+
+    background-color: #c24b23;
+    width: 50%;
+    margin: auto;
+    color: #eae7df;
+    padding: 5px;
+
+}
+
+.bottom {
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
 
 }
 
@@ -392,7 +487,8 @@ footer {
  .nav-bar {
 
     width: 100%;
-    min-height: 220px;
+    height: 150px;
+    padding: 0px;
 
 }
 
@@ -410,7 +506,7 @@ footer {
 
 header {
 
-    padding-bottom: 5%;
+    margin-bottom: 0%;
 
 }
 
@@ -420,23 +516,64 @@ header {
     width: 25%;
     display: flex;
     justify-content: center;
-    position: relative;
     left: 50%;
-    transform: translate(-50%, 200%);
+    top: 0;
+    transform: translate(50%, 150%);
     align-items: center;
+    position: absolute;
+    
+
+}
+
+.left {
+
+    left: 0px;
+
+}
+
+.right {
+
+    right: 0px;
+
+}
+
+.float-l {
+
+    float: left;
+    width: auto;
+
+}
+
+.float-r {
+
+    float: right;
+    width: auto;
+
+}
+
+.float-c {
+
+    margin: auto;
+    width: auto;
 
 }
 
 .menu a {
 
-    color: rgb(254, 238, 219);
+    color: #5c5c5c;
 
 }
 
 .menu li:hover {
 
-    background-color: #604e3d;
+    background-color: #b4ad96;
     transition: 0.3s ease;
+
+}
+
+.menu li {
+
+    margin-left: 20px;
 
 }
 
@@ -451,10 +588,10 @@ header {
 
     position: absolute;
     text-align: center;
-    top: 45%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    transform: translate(-50%, -90%);
     left:50%;
-    font-size: 2em;
+    font-size: 3em;
     z-index: 2;
     display: block;
 
@@ -466,6 +603,7 @@ header {
 
 }
 
+
 .swiper {
 
     height: 50%;
@@ -476,9 +614,20 @@ header {
 
 .card-sm {
 
+    margin-top: 10px;
+    padding: 50px;
     width: 40%;
     float: right;
     border-bottom: none;
+
+}
+
+.card-md {
+
+    width: 33%;
+    height: 500px;
+    display: inline-block;
+    background-color: #e8e4d5;
 
 }
 
@@ -489,6 +638,33 @@ header {
     width:100%;
     object-fit:cover;
     margin-bottom:-25%
+
+}
+
+.swiper {
+
+    border: #FFF 1px solid;
+
+}
+
+.footer-section {
+
+    width: 33%;
+    min-height: 150px;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.action-button {
+
+    width: 25%;
+
+}
+
+#contactForm {
+
+    margin-top: 0%;
 
 }
 
