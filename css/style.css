@@ -459,15 +459,6 @@ footer {
 
 }
 
-.bottom {
-
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%);
-
-}
-
 /*
  *
  * Desktop Styling Rules
@@ -659,6 +650,16 @@ header {
 .action-button {
 
     width: 25%;
+
+}
+
+
+.bottom {
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
 
 }
 
