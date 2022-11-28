@@ -108,8 +108,8 @@ header{
 
     position: absolute;
     text-align: center;
-    top: 45%;
-    transform: translate(-50%, 0%);
+    top: 50%;
+    transform: translate(-50%, -70%);
     left:50%;
     font-size: 2em;
     z-index: 1;
@@ -557,7 +557,7 @@ header {
 
 .menu li:hover {
 
-    background-color: #b4ad96;
+    background-color: #cec5ab;
     transition: 0.3s ease;
 
 }
@@ -580,7 +580,7 @@ header {
     position: absolute;
     text-align: center;
     top: 50%;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -50%);
     left:50%;
     font-size: 3em;
     z-index: 2;
