@@ -24,8 +24,8 @@ html {
     width: 100%;
     height: 100%;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
-    color: #5c5c5c;
-    background-color: #e0dbca;
+    color: #000;
+    background-color: #ede4ce;
 
 }
 
@@ -114,7 +114,8 @@ header{
     font-size: 2em;
     z-index: 1;
     display: block;
-    color: #eae7df;
+    width: 100%;
+    color: #FFF;
 
  }
 
@@ -156,7 +157,7 @@ a {
     align-items: center;
     justify-content: center;
     color: #FFF;
-    background-color: #e0dbca;
+    background-color: #ede4ce;
     width: 100vw;
     height: 0px;
 
@@ -219,7 +220,7 @@ input[type=checkbox]:checked ~ .menu{
 
 .overlay-content {
 
-    background: #4e3f31;
+    background: #e1d8bc;
     overflow: hidden;
     position: fixed;
     height: 100vh;
@@ -237,7 +238,7 @@ input[type=checkbox]:checked ~ .menu{
 
     display: block;
     font-size: 20px;
-    color: white;
+    color: #000;
     text-decoration: none;
     padding: 30px;
 
@@ -245,7 +246,7 @@ input[type=checkbox]:checked ~ .menu{
 
 .overlay-content a:hover {
 
-    background-color: #675341f3;
+    background-color: #f4eddc;
 
 }
 
@@ -266,6 +267,7 @@ z-index: 2;
     top: 0%;
     right: 0%;
     padding: 0px 15px;
+    color: black;
 
 }
 
@@ -405,8 +407,8 @@ content p {
 
 footer {
 
-    background-color: #b4ad96;
-    color: #eae7df;
+    background-color: #e1d8bc;
+    color: #000;
     min-height: 15%;
     overflow: hidden;
     width: 100%;
@@ -423,19 +425,19 @@ footer {
 
 .fa-instagram {
 
-    color: #eae7df;
+    color: #000;
 
 }
 
 .fa-phone {
 
-    color: #eae7df;
+    color: #000;
 
 }
 
 .fa-youtube-play {
 
-    color: #eae7df;
+    color: #000;
 
 }
 
@@ -551,14 +553,15 @@ header {
 
 .menu a {
 
-    color: #5c5c5c;
+    color: #000;
 
 }
 
 .menu li:hover {
 
-    background-color: #cec5ab;
+    background-color: #e1d8bc;
     transition: 0.3s ease;
+    border-bottom: #5c5c5c 1px solid;
 
 }
 
@@ -572,6 +575,12 @@ header {
 
     padding: 5px 14px;
     display: block;
+
+}
+
+.active-link {
+
+    border-bottom: #5c5c5c 1px solid;
 
 }
 
