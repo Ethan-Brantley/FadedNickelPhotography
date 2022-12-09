@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faded Nickel Photography | About Us</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head> 
 <body>
     <div class="wrapper">
@@ -42,7 +41,39 @@
         </nav>
     </header>
     <div>
-    <img src="images/camera-711040_1920-take2.jpg" id="hero">
+    <!--<img src="images/camera-711040_1920-take2.jpg" id="hero">-->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/camera-711040_1920-take2.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/photography_showcase/noco_photography_showcase_1.jpeg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/photography_showcase/noco_photography_showcase_2.jpeg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/photography_showcase/noco_photography_showcase_3.jpeg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/photography_showcase/noco_photography_showcase_4.jpeg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/photography_showcase/noco_photography_showcase_5.jpeg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/photography_showcase/noco_photography_showcase_6.jpeg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/photography_showcase/noco_photography_showcase_7.jpeg">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
+        <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
+    </div>
     <!--<div class="hero-txt">Moments Captured</div>-->
 
     <content>
@@ -100,5 +131,29 @@
     </footer>
 
     <script src="js/mobile_navigation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay:3000,
+            disableOnInteraction: false,
+        },
+        });
+    </script>
 </body>
 </html>

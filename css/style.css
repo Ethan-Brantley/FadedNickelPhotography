@@ -280,7 +280,7 @@ z-index: 2;
 
 .swiper {
 
-    height: 50%;
+    height: 70vh;
     width: 100%;
 
 }
@@ -297,6 +297,30 @@ z-index: 2;
 .swiper-pagination {
 
     width: 50%;
+
+}
+
+.swiper-button-next, .swiper-button-prev {
+
+    display: none;
+
+}
+
+.swiper-button-next {
+
+    right: 0%;
+
+}
+
+.swiper-button-prev {
+
+    left: 0%;
+
+}
+
+.swiper-pagination-bullet {
+
+    background-color: white;
 
 }
 
@@ -627,15 +651,29 @@ footer {
 
 }
 
+
+/*
+ *
+ * Tablet Styling Rules
+ *
+ * Styling breakpoint for tablet-sized devices
+ *
+ */
+
+ @media only screen and (min-width: 480px){
+
+
+    }
+
 /*
  *
  * Desktop Styling Rules
  *
- * lorem ipsum
+ * Styling breakpoint for desktop computers and laptops
  *
  */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1224px){
 
 /*
  *
@@ -770,15 +808,6 @@ header {
 
 }
 
-
-.swiper {
-
-    height: 50%;
-    width: 50%;
-
-
-}
-
 .card-sm {
 
     margin-top: 0px;
@@ -807,7 +836,15 @@ header {
 
 .swiper {
 
-    border: #FFF 1px solid;
+    height: 650px;
+    width: 100%;
+
+}
+
+.swiper img {
+
+    object-fit: cover;
+
 
 }
 
@@ -892,12 +929,26 @@ h3{
 
 }
 
+.swiper-button-next, .swiper-button-prev {
+
+    display: flex;
+    color: white;
+    height: 110%;
+    width: 45px;
+    transform: translate(0%, -47%);
+
 }
 
-/*
- *
- * Tablet Styling Rules
- *
- * lorem ipsum
- *
- */
+.swiper-button-next {
+
+    right: 0%;
+
+}
+
+.swiper-button-prev {
+
+    left: 0%;
+
+}
+
+}
