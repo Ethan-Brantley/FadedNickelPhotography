@@ -115,7 +115,7 @@ header{
 
     position: absolute;
     text-align: center;
-    top: 55%;
+    top: 30%;
     transform: translate(-50%, -50%);
     left:50%;
     font-size: 2em;
@@ -303,7 +303,7 @@ z-index: 2;
 #hero {
 
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     object-fit: cover;
 
 }
@@ -364,14 +364,32 @@ h3 {
 
 }
 
+.call-to-action {
+
+    color:black;
+    font-size: 23px;
+    font-weight:bold;
+    padding: 50px 0px 30px 0px;
+
+}
+
 .flag-important {
 
     border-bottom: 5px solid #c24b23;
     margin: 5px;
     padding-left: 5px;
     padding-right: 5px;
+    margin-bottom: 15px;
     display: inline-block;
     text-align: center;
+
+}
+
+.icon {
+
+    margin: auto;
+    width: 40px;
+    padding-bottom: 5px;
 
 }
 
@@ -421,6 +439,7 @@ content p {
 .card-sm p {
 
     padding: 5px;
+    padding-bottom: 20px;
     text-indent: 2em;
 
 }
@@ -437,10 +456,10 @@ content p {
 .pfp {
 
     margin: auto;
-    width: 150px;
-    height: 150px;
+    width: 80vw;
+    height: 80vw;
     border-radius: 50%;
-    padding: 5px;
+    margin-bottom: 30px;
     object-fit: cover;
 
 }
@@ -455,7 +474,6 @@ content p {
 
 .blockquote {
 
-    margin: auto;
     padding: 20px 0px;
 
 }
@@ -563,7 +581,7 @@ footer {
 
 }
 
-.fa-youtube-play {
+.fa-envelope {
 
     color: #000;
 
@@ -572,7 +590,7 @@ footer {
 .footer-section {
 
     width: 100%;
-    min-height: 100px;
+    height: 150px;
     display: inline-block;
     text-align: center;
     padding-bottom: 50px;
@@ -587,6 +605,12 @@ footer {
     color: #eae7df;
     padding: 5px;
     margin-top: 15px;
+
+}
+
+.explore a {
+
+    padding: 10px;
 
 }
 
@@ -766,9 +790,8 @@ header {
 .card-md {
 
     width: 33%;
-    height: 400px;
+    height: 450px;
     display: inline-block;
-    background-color: #e8e4d5;
 
 }
 
@@ -790,7 +813,7 @@ header {
 .footer-section {
 
     width: 33%;
-    min-height: 150px;
+    height: 250px;
     overflow: hidden;
     text-align: center;
 
@@ -799,6 +822,7 @@ header {
 .action-button {
 
     width: 40%;
+    transform: translate(0%, 200%);
 
 }
 
@@ -854,6 +878,7 @@ h3{
 
     width: 35%;
     margin: 0%;
+    transform: translate(55%);
 
 }
 
