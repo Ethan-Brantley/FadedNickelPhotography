@@ -1,5 +1,5 @@
 /*
- *brand
+ *
  * General Info
  *
  * The following set of styling rules is hand-written mobile-first.
@@ -19,13 +19,19 @@
  *
  */
 
+ @font-face {
+    font-family: "Libre Baskerville";
+    src: url("../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+}
+
 html {
 
     width: 100%;
     height: 100%;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Libre Baskerville", sans-serif;
     color: #000;
     background-color: #ede4ce;
+    scroll-behavior: smooth;
 
 }
 
@@ -99,6 +105,7 @@ header{
     top: 0%;
     left: 50%;
     margin-top: 25px;
+    width: 100px;
     transform: translate(-50%);
     position: absolute;
 
@@ -331,12 +338,57 @@ content {
 
 .content-section p {
 
-    text-indent: 1.5em;
+    text-indent: 2em;
+    padding-top: 20px;
 
 }
 
 h1 {
 
+}
+
+h3 {
+
+    text-align: center;
+    padding: 20px 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.summary {
+
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 200;
+
+}
+
+.flag-important {
+
+    border-bottom: 5px solid #c24b23;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.flag-minor {
+
+    border-bottom: 4px solid #c24b23;
+    line-height: 10px;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 20px;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    margin-bottom: 20px;
+    
 }
 
 h2 {
@@ -385,7 +437,11 @@ content p {
 .pfp {
 
     margin: auto;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    padding: 5px;
+    object-fit: cover;
 
 }
 
@@ -394,6 +450,72 @@ content p {
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
+
+}
+
+.blockquote {
+
+    margin: auto;
+    padding: 20px 0px;
+
+}
+
+.blockquote--quoted:before {
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    content: "\201c";
+    font-size: 80px;
+    color: #000;
+    display: block;
+    margin-bottom: -70px;
+    margin-top: -20px;
+
+}
+
+.quote {
+
+    padding: 0px 50px;
+    font-style: italic;
+}
+
+.credit {
+
+    text-align: right;
+    padding: 10px 50px;
+    font-weight: bold;
+
+}
+
+.showcase-img {
+
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.bg-p-right {
+
+    background-position: 72%;
+
+}
+
+.fa.scroll-cue {
+
+    position: absolute;
+    left: 50%;
+    margin-left: 0%;
+    padding-left: 0%;
+    margin-top: 30px;
+    font-size: 40px;
+    transform: translate(-50%);
+    color: white;
+
+}
+
+.scroll-cue-bottom {
+
+    bottom: 15%;
 
 }
 
@@ -429,6 +551,12 @@ footer {
 
 }
 
+.fa-pinterest {
+
+    color: #000;
+
+}
+
 .fa-phone {
 
     color: #000;
@@ -458,6 +586,20 @@ footer {
     margin: auto;
     color: #eae7df;
     padding: 5px;
+    margin-top: 15px;
+
+}
+
+.atlas {
+
+    font-size: 0.8em;
+    padding: 20px 0px;
+
+}
+
+.atlas a {
+
+    color: black;
 
 }
 
@@ -506,12 +648,11 @@ header {
 .menu {
 
     max-height: 600px;
-    width: 25%;
+    width: 40%;
     display: flex;
     justify-content: center;
-    left: 50%;
-    top: 0;
-    transform: translate(50%, 150%);
+    top: 0px;
+    transform: translate(0%, 150%);
     align-items: center;
     position: absolute;
     
@@ -521,12 +662,14 @@ header {
 .left {
 
     left: 0px;
+    transform: translateX(-25%, 150%);
 
 }
 
 .right {
 
     right: 0px;
+    transform: translate(80%, 150%);
 
 }
 
@@ -567,13 +710,13 @@ header {
 
 .menu li {
 
-    margin-left: 20px;
+    margin: 0px 15px;
 
 }
 
 .menu li a {
 
-    padding: 5px 14px;
+    padding: 5px 10px;
     display: block;
 
 }
@@ -614,18 +757,16 @@ header {
 
 .card-sm {
 
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 50px;
-    width: 40%;
-    float: right;
-    border-bottom: none;
+    width: 100%;
 
 }
 
 .card-md {
 
     width: 33%;
-    height: 500px;
+    height: 400px;
     display: inline-block;
     background-color: #e8e4d5;
 
@@ -657,7 +798,7 @@ header {
 
 .action-button {
 
-    width: 25%;
+    width: 40%;
 
 }
 
@@ -674,6 +815,53 @@ header {
 #contactForm {
 
     margin-top: 0%;
+
+}
+
+.pfp {
+
+    float: right;
+    border-radius: 0%;
+    width: auto;
+    height: auto;
+    margin: 25px;
+
+}
+
+.flag-minor {
+
+    border-bottom: 3px solid #c24b23;
+    line-height: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    display: inline-block;
+    left: 0%;
+    transform: translate(0%);
+    position: relative;
+    
+}
+
+h3{
+
+    text-align: left;
+    padding-left: 0px;
+    font-size: 30px;
+
+}
+
+.blockquote {
+
+    width: 35%;
+    margin: 0%;
+
+}
+
+.showcase-img {
+
+    width: 100%;
+    height: 110vh;
+    background-position: center;
 
 }
 

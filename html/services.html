@@ -18,7 +18,7 @@
     <header id="header">
         <nav class="nav-bar">
             <ul class="nav-links">
-                <a href="../index.html"><img src="https://via.placeholder.com/150x100" id="brand"></a>
+                <a href="../index.html"><img src="../images/logo-option5.png" id="brand"></a>
                 <span onclick="openNav()" class="openBtn"><i class="fa fa-bars"></i></span>
 
                 <div class="overlay-content" id="nav">
@@ -26,6 +26,7 @@
                     <a href="../index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="services.html">Services</a>
+                    <a href="prints.html">Prints</a>
                     <a href="contact.html">Contact</a>
                 </div>
                 <div class="menu left">
@@ -33,7 +34,8 @@
                     <li><a href="about.html">About</a></li>
                 </div>
                 <div class="menu right">
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html" class="active-link">Services</a></li>
+                    <li><a href="prints.html">Prints</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
             </ul>
@@ -42,38 +44,31 @@
 
     <content>
 
-        <img src="https://via.placeholder.com/2500x1000">
+        <div class="showcase-img" style="background-image:url(../images/mountains-2069531_1920.jpg);height:70vh;">
+            <a href="#Services"><i class="fa fa-chevron-down scroll-cue scroll-cue-bottom" aria-hidden="true"></i></a>
+        </div>
 
         <div class="content-section">
-            <div class="card-md">
-                <h2 class="center"c>Lorem Ipsum</h2>
+            <div class="card-md" id="Services">
+                <h2 class="center" id="portraits">Portraits</h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa accusamus fugit debitis, itaque alias aut laudantium soluta quod odit dolor ex, commodi iure asperiores recusandae est doloremque velit provident?
+                    I specialize in outdoor portraits, with natural lighting and natural backdrops. If you're interested in scheduling a portrait, please contact me with the link below for current availability and pricing.<br><br> Please make sure you dress according to the weather! 
                 </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, cupiditate provident numquam inventore placeat magnam doloremque dolorum. Aspernatur at ex eos, inventore ducimus veritatis deleniti voluptas sapiente eius nisi quasi.
-                </p>
-                <a><div class="action-button center bottom">Button</div></a>
+                <a href="contact.html"><div class="action-button center bottom">Schedule</div></a>
             </div>
             <div class="card-md">
-                <h2 class="center">Lorem Ipsum</h2>
+                <h2 class="center" id="aerial">Aerial</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi. Dolores pariatur dicta neque maxime facilis. Sit facilis reiciendis, quisquam voluptas earum placeat saepe neque. Quam nam mollitia molestiae nostrum.
+                    I am a licensed drone pilot and I'm passionate about the perspective a birds-eye-view can achieve. Whether you are looking for an aerial view of your property or a stunning piece of art from this unique vantage point, contact me below for more information.
                 </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, cupiditate provident numquam inventore placeat magnam doloremque dolorum. Aspernatur at ex eos, inventore ducimus veritatis deleniti voluptas sapiente eius nisi quasi.
-                </p>
-                <a><div class="action-button center bottom">Button</div></a>
+                <a href="contact.html"><div class="action-button center bottom">Schedule</div></a>
             </div>
             <div class="card-md">
-                <h2 class="center"c>Lorem Ipsum</h2>
+                <h2 class="center">Artwork</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, cupiditate provident numquam inventore placeat magnam doloremque dolorum. Aspernatur at ex eos, inventore ducimus veritatis deleniti voluptas sapiente eius nisi quasi.
+                    Are you looking for something to adorn the walls of your home? I have plenty of prints available at my online store. Please feel free to browse my options. If you don't see something that you're looking for, reach out to me through my contact page and let's chat!
                 </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, cupiditate provident numquam inventore placeat magnam doloremque dolorum. Aspernatur at ex eos, inventore ducimus veritatis deleniti voluptas sapiente eius nisi quasi.
-                </p>
-                <a><div class="action-button center bottom">Button</div></a>
+                <a href="prints.html"><div class="action-button center bottom">My Prints</div></a>
             </div>
         </div>
     </content>
@@ -84,9 +79,9 @@
         <div class="footer-section">
             <div>
             <h2>Explore</h2>
-            <a><p>Lorem Ipsum</p></a>
-            <a><p>Lorem Ipsum</p></a>
-            <a><p>Lorem Ipsum</p></a>
+            <a href="#portraits" style="color:black"><p>Portraits</p></a>
+            <a href="#aerial" style="color:black"><p>Aerial</p></a>
+            <a href="prints.html" style="color:black"><p>Artwork</p></a>
             </div>
         </div>
 
@@ -99,12 +94,14 @@
         <div class="footer-section">
             <h2>Social</h2>
             <a href="tel:#"><i class="fa fa-phone"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
         </div>
 
         <p class="center">
-            Copyright Declaration
+            Copyright &copy; 2023 Faded Nickel Photography
+        </p>
+        <p class="center atlas">
+            Website by <a href="http://www.atlaswebdesign.net/"><u>Atlas Web Design</u></a>
         </p>
     </footer>
 
