@@ -446,7 +446,7 @@ content p {
 
 .card-md {
 
-    padding: 20px 40px;
+    padding: 50px 40px;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -789,6 +789,7 @@ header {
 
 .card-md {
 
+    padding: 20px 40px;
     width: 33%;
     height: 450px;
     display: inline-block;
