@@ -355,9 +355,10 @@ content {
 
 }
 
-.content-section {
+.services-section {
 
-
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -394,7 +395,7 @@ h3 {
     color:black;
     font-size: 23px;
     font-weight:bold;
-    padding: 50px 0px 30px 0px;
+    padding: 50px 20px 30px 20px;
 
 }
 
@@ -677,6 +678,18 @@ footer {
 
 @media only screen and (min-width: 1224px){
 
+body {
+
+    font-size: 16px;
+
+}
+
+.content-section p {
+
+    padding: 10px 75px;
+
+}
+
 /*
  *
  * Desktop Navigation Styles
@@ -955,6 +968,14 @@ h3{
 .swiper-button-prev {
 
     left: 5%;
+
+}
+
+.services-section {
+
+    flex-direction: row;
+    justify-content: space-evenly;
+
 
 }
 
