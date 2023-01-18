@@ -280,7 +280,7 @@ z-index: 2;
 
 .swiper {
 
-    height: 80vh;
+    height: 50vh;
     width: 100%;
     margin: 50px 0px
 
@@ -336,6 +336,7 @@ z-index: 2;
 .fa-bars {
 
     color: black;
+    font-size: 30px;
 
 }
 
@@ -682,6 +683,12 @@ body {
 
     font-size: 16px;
 
+}
+
+.p-md {
+
+    margin: 50px 0px;
+    
 }
 
 .content-section p {
