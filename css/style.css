@@ -303,19 +303,21 @@ z-index: 2;
 
 .swiper-button-next, .swiper-button-prev {
 
+    top: 50%;
+
 }
 
 .swiper-button-next {
 
     color: white;
-    right: 0%;
+    right: 2%;
 
 }
 
 .swiper-button-prev {
 
     color: white;
-    left: 0%;
+    left: 2%;
 
 }
 
@@ -336,6 +338,18 @@ z-index: 2;
 .fa-bars {
 
     color: black;
+    font-size: 30px;
+
+}
+
+.fa-chevron-left {
+
+    font-size: 30px;
+
+}
+
+.fa-chevron-right {
+
     font-size: 30px;
 
 }
